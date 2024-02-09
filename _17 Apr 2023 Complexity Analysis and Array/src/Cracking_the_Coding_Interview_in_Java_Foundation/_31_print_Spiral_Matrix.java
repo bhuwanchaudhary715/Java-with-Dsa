@@ -22,7 +22,7 @@ public class _31_print_Spiral_Matrix {
         int topRow=0 ,bottomRow=r-1, leftCol=0, rightCol=c-1;
         int totalElements=0;
 
-        while(topRow < r*c){
+        while(totalElements < r*c){
 
             // topRow --> leftCol to rightCol
             for(int j=leftCol;j<=rightCol && totalElements<r*c ;j++){
