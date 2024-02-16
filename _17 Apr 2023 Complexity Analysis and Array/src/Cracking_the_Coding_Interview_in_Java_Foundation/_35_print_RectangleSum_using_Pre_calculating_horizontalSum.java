@@ -6,6 +6,8 @@ public class _35_print_RectangleSum_using_Pre_calculating_horizontalSum {
 
     static void printPrefixSumMatrix(int matrix[][]){
 
+        //
+
         int r=matrix.length;
         int c=matrix[0].length;
 
@@ -23,18 +25,21 @@ public class _35_print_RectangleSum_using_Pre_calculating_horizontalSum {
     static int findSum(int matrix[][],int l1,int r1,int l2,int r2){
 
         int sum=0;
+
         printPrefixSumMatrix(matrix);
 
         for(int i=l1;i<=l2;i++){
 
-           if( r1 >= 1){
+           if( r1 > 0 ){
 
-               sum +=matrix[i][r2] - matrix[i][r1-1];
-           }else {
+               sum += matrix[i][r2] - matrix[i][r1-1];
+
+           } else {
 
                sum += matrix[i][r2];
            }
         }
+
         return sum;
     }
 
