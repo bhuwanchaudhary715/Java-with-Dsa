@@ -6,7 +6,7 @@ public class _35_print_RectangleSum_using_Pre_calculating_horizontalSum {
 
     static void printPrefixSumMatrix(int matrix[][]){
 
-        //
+        /// 
 
         int r=matrix.length;
         int c=matrix[0].length;
