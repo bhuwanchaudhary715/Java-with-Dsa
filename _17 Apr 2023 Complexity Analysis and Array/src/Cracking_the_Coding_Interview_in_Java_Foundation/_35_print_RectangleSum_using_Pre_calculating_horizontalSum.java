@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class _35_print_RectangleSum_using_Pre_calculating_horizontalSum {
 
-    static void printPrefixSumMatrix(int matrix[][]){
+    static void printPrefixSumMatrix(int matrix[][] ){
 
         // This
 
