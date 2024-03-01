@@ -15,6 +15,8 @@ public class _36_PrefixSumOverColumnAndRowBoth_DoneBYMyself {
             System.out.println();
         }
     }
+
+    // -->  prefixSum row_Wise direction
     static void prefixSum_in_rowWise_direction(int matrix[][]){
 
         for(int i=0;i<matrix.length;i++){
@@ -24,11 +26,13 @@ public class _36_PrefixSumOverColumnAndRowBoth_DoneBYMyself {
                 matrix[i][j] +=matrix[i][j-1];
             }
         }
-        System.out.println("row wise");
+        System.out.println("prefixSum row wise direction");
         printArray(matrix);
     }
 
-    static int [][] prefixSum_in_columnWise_direction(int matrix[][]){
+
+  // --> prefixSum over column and row both
+    static void  prefixSum_Over_column_and_rowBoth(int matrix[][]){
 
         prefixSum_in_rowWise_direction(matrix);
 
@@ -39,7 +43,36 @@ public class _36_PrefixSumOverColumnAndRowBoth_DoneBYMyself {
                 matrix[i][j] +=matrix[i-1][j];
             }
         }
-        return matrix;
+
+        System.out.println("prefixSum over colum and row both");
+        printArray(matrix);
+    }
+
+    static  int  find_Ans(int matrix[][],int l1,int r1,int l2,int r2){
+
+        int sum=0, up=0,left=0,leftUp=0;
+        prefixSum_Over_column_and_rowBoth(matrix);
+
+            sum = matrix[l2][r2];
+
+        if(l1 > 0) {
+             up = matrix[l1 - 1][r2];
+        }
+
+        if(r1 > 0) {
+             left = matrix[l2][r1 - 1];
+        }
+
+        if(l1 > 0 && r1 > 0) {
+
+             leftUp = matrix[l1 - 1][r1 - 1];
+        }
+
+
+        int ans = sum - up - left + leftUp;
+
+        return ans;
+
     }
 
       Scanner sc=new Scanner(System.in);
@@ -71,10 +104,7 @@ public class _36_PrefixSumOverColumnAndRowBoth_DoneBYMyself {
         int l2=sc.nextInt();
         int r2=sc.nextInt();
 
-        int matrix[][]=prefixSum_in_columnWise_direction(arr);
-
-        System.out.println("column wise");
-        printArray(matrix);
+        System.out.println("Rectangle sum is:"+find_Ans(arr,l1,r1,l2,r2));
 
     }
 }
