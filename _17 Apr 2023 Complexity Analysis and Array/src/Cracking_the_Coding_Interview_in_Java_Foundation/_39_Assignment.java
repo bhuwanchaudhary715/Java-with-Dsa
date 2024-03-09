@@ -35,7 +35,7 @@ public class _39_Assignment {
 
             Integer t = list.get(i);
 
-            if( t >= 0){
+            if( t >= 0){  // <-- this line checking the condition whether the [ t >= 0 ]
 
                 System.out.print(" "+list.get(i));
             }
