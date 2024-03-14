@@ -22,7 +22,7 @@ public class _39_Assignment {
 
     public static void main(String[] args) {
 
-        ArrayList<Integer> list = new ArrayList<>();  // Arraylist
+        ArrayList<Integer> list = new ArrayList<>();  // this line is Arraylist
 
         list.add(-4);
         list.add(0);
