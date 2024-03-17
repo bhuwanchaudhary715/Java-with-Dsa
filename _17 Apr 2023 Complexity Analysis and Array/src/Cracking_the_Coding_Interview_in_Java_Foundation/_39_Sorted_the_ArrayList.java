@@ -38,7 +38,7 @@ public class _39_Sorted_the_ArrayList {
         System.out.println("Original list2:");
         System.out.println(list2);
 
-        Collections.sort(list2,Collections.reverseOrder());
+        Collections.sort(list2,Collections.reverseOrder()); //
         System.out.println("Sorted list2:");
         System.out.println(list2);
 
