@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/Java-with-Dsa.iml" filepath="$PROJECT_DIR$/.idea/Java-with-Dsa.iml" />
+      <module fileurl="file://$PROJECT_DIR$/_1 May 2023 Recursion/_1 May 2023 Recursion.iml" filepath="$PROJECT_DIR$/_1 May 2023 Recursion/_1 May 2023 Recursion.iml" />
+      <module fileurl="file://$PROJECT_DIR$/_17 Apr 2023 Complexity Analysis and Array/_17 Apr 2023 Complexity Analysis and Array.iml" filepath="$PROJECT_DIR$/_17 Apr 2023 Complexity Analysis and Array/_17 Apr 2023 Complexity Analysis and Array.iml" />
+      <module fileurl="file://$PROJECT_DIR$/_24 Apr 2023 Sorting Searching and Bit Manipulation/_24 Apr 2023 Sorting Searching and Bit Manipulation.iml" filepath="$PROJECT_DIR$/_24 Apr 2023 Sorting Searching and Bit Manipulation/_24 Apr 2023 Sorting Searching and Bit Manipulation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/_8 May 2023 Backtracking/_8 May 2023 Backtracking.iml" filepath="$PROJECT_DIR$/_8 May 2023 Backtracking/_8 May 2023 Backtracking.iml" />
+    </modules>
+  </component>
+</project>
